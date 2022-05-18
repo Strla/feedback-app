@@ -6,7 +6,7 @@ import Card from "../shared/Card";
 
 function FeedbackForm() {
   const [text, setText] = useState("");
-  const [rating, setRating] = useState(10);
+  const [rating, setRating] = useState();
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [message, setMessage] = useState("");
 
@@ -50,7 +50,7 @@ function FeedbackForm() {
       }
 
       setBtnDisabled(true);
-      setRating(10);
+      setRating();
       setText("");
     }
   };
